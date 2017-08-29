@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Bosser" nameDescription="bosser" race="blood" experience="200000" speed="600" manacost="0">
+	<health now="7000000" max="7000000"/>
+	<look type="302" head="90" body="95" legs="114" feet="114" addons="3" corpse="8955"/>
+	<targetchange interval="240" chance="15"/>
+	<strategy attack="6000" defense="6000"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="0"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="1"/>
+		<flag runonhealth="3000"/>
+	</flags>
+  <attacks>
+    <attack name="melee" interval="500" skill="400" attack="500"/>
+    <attack name="physical" interval="500" chance="100" range="9" min="-10000" max="-15000">
+      <attribute key="shootEffect" value="InfernalBolt"/>
+    </attack>
+    <attack name="lifedrain" interval="800" chance="12" radius="8" target="0" min="-12000" max="-15000">
+      <attribute key="areaEffect" value="rednote"/>
+	</attack>
+  </attacks>
+	<defenses armor="165" defense="150">
+		<defense name="healing" interval="400" chance="15" min="5000" max="10000">
+			<attribute key="areaEffect" value="blueshimmer"/>
+		</defense>
+		<defense name="healing" interval="100" chance="25" min="2000" max="3000">
+			<attribute key="areaEffect" value="blueshimmer"/>
+		</defense>
+		<defense name="speed" interval="1000" chance="10" speedchange="1800" duration="4000">
+			<attribute key="areaEffect" value="redshimmer"/>
+		</defense>
+	</defenses>
+	<immunities>
+		<immunity physical="0"/>
+		<immunity energy="0"/>
+		<immunity fire="0"/>
+		<immunity poison="0"/>
+		<immunity lifedrain="0"/>
+		<immunity paralyze="0"/>
+		<immunity outfit="0"/>
+		<immunity drunk="0"/>
+		<immunity invisible="1"/>
+	</immunities>
+	<summons maxSummons="0">
+		<summon name="hellfire fighter" interval="1000" chance="8" max="4"/>
+	</summons>
+		  <loot capacity="5000">
+		<item id="2160" countmax="100" chance="3500000"/>
+		<item id="2160" countmax="100" chance="9000000"/>
+	</loot>
+</monster>
