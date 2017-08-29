@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Waver" nameDescription="a waver" race="blood" experience="175000" speed="920" manacost="0">
+	<health now="300000" max="300000"/>
+	<look type="255" corpse="6080"/>
+	<targetchange interval="5000" chance="8"/>
+	<strategy attack="100" defense="0"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="0"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" skill="400" attack="1000"/>
+		<attack name="firecondition" interval="1000" chance="7" range="2" min="-8000" max="-10200">
+			<attribute key="shootEffect" value="fire"/>
+			<attribute key="areaEffect" value="yellowspark"/>
+		</attack>
+		<attack name="physical" interval="1000" chance="7" radius="6" target="0" min="-9250" max="-10750">
+			<attribute key="areaEffect" value="explosion"/>
+		</attack>
+		<attack name="fire" interval="1000" chance="50" radius="5" target="0" min="-9200" max="-10500">
+			<attribute key="areaEffect" value="yellowspark"/>
+		</attack>
+		<attack name="firefield" interval="1000" chance="4" radius="8" target="0">
+			<attribute key="areaEffect" value="explosion"/>
+		</attack>
+		<attack name="fire" interval="1000" chance="34" range="7" radius="7" target="1" min="-9130" max="-10850">
+			<attribute key="shootEffect" value="fire"/>
+			<attribute key="areaEffect" value="firearea"/>
+		</attack>
+		<attack name="fire" interval="1000" chance="13" length="8" spread="0" min="-5000" max="-10000">
+			<attribute key="areaEffect" value="explosion"/>
+		</attack>
+		<attack name="fire" interval="1000" chance="10" length="8" spread="3" min="-3000" max="-11000">
+			<attribute key="areaEffect" value="firearea"/>
+		</attack>
+	</attacks>
+	<defenses armor="17" defense="23"/>
+	<elements>
+		<element energyPercent="10"/>
+		<element earthPercent="80"/>
+		<element icePercent="15"/>
+		<element firePercent="-10"/>
+		<element holyPercent="-25"/>
+	</elements>
+	<immunities>
+		<immunity death="0"/>
+		<immunity invisible="1"/>
+	</immunities>
+	<voices interval="4000" chance="100">
+		<voice sentence="waverrrrrrr"/>
+	</voices>
+	<loot>
+		<item id="2152" countmax="84" chance="100000"/><!-- gold coin -->
+		<item id="7588" chance="8000"/><!-- strong health potion -->
+		<item id="7589" chance="8000"/><!-- strong mana potion -->
+		<item id="2145" chance="6000"/><!-- small diamond -->
+		<item id="2127" chance="5000"/><!-- esmerald blange -->
+		<item id="1987" chance="100000"><!-- bag -->
+			<inside>
+				<item id="2186" chance="2000"/><!-- moonlight rod -->
+				<item id="9837" chance="2000"/><!-- velvet tapestry -->
+				<item id="5670" chance="1200"/><!-- voodo skull -->
+				<item id="9808" chance="1200"/><!-- rusty armor -->
+				<item id="2195" chance="300"/><!-- boots of haste -->
+			</inside>
+		</item>
+	</loot>
+</monster>
