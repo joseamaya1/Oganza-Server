@@ -32,6 +32,11 @@ Auto Loot:
 !autoloot show -- Mostrar a lista do autoLoot
 !autoloot clear -- Limpar a lista do autoLoot
 ```
+```bash
+Treino offline de 24 horas
+Velocidade máxima do char 15.000
+Iddle time de 60 minutos
+```
 
 ## Login.php para usar em gesior
 
