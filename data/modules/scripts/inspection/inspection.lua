@@ -148,7 +148,7 @@ function sendInspectionList(uid)
 	 	local playerInfo = {
 	 		{Title = "Level", Value = object:getLevel()},
 	 		{Title = "Vocation", Value = object:getVocation():getName()},
-	 		{Title = "Loyalty Rank", Value = "Sentinel of Tibia"},
+	 		{Title = "Loyalty Rank", Value = "Sentinel of Oganza"},
 	 		{Title = "Outfit", Value = object:getOutfit().lookType}
 	 	}
 	 	
