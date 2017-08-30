@@ -116,7 +116,7 @@ struct Kill {
 
 using MuteCountMap = std::map<uint32_t, uint32_t>;
 
-static constexpr int32_t PLAYER_MAX_SPEED = 30000;
+static constexpr int32_t PLAYER_MAX_SPEED = 4500;
 static constexpr int32_t PLAYER_MIN_SPEED = 10;
 
 class Player final : public Creature, public Cylinder
@@ -215,7 +215,7 @@ class Player final : public Creature, public Cylinder
 		bool addOfflineTrainingTries(skills_t skill, uint64_t tries);
 
 		void addOfflineTrainingTime(int32_t addTime) {
-			offlineTrainingTime = std::min<int32_t>(24 * 3600 * 1000, offlineTrainingTime + addTime);
+			offlineTrainingTime = std::min<int32_t>(12 * 3600 * 1000, offlineTrainingTime + addTime);
 		}
 		void removeOfflineTrainingTime(int32_t removeTime) {
 			offlineTrainingTime = std::max<int32_t>(0, offlineTrainingTime - removeTime);
