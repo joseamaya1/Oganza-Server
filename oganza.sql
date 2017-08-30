@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Servidor: localhost
--- Tempo de Geração: Ago 28, 2017 as 01:19 
+-- Tempo de Geração: Ago 30, 2017 as 03:42 
 -- Versão do Servidor: 5.1.41
 -- Versão do PHP: 5.3.1
 
@@ -68,7 +68,6 @@ CREATE TABLE IF NOT EXISTS `accounts` (
 
 INSERT INTO `accounts` (`id`, `name`, `password`, `secret`, `type`, `premdays`, `coins`, `lastday`, `email`, `creation`, `vote`, `key`, `email_new`, `email_new_time`, `rlname`, `location`, `page_access`, `email_code`, `next_email`, `premium_points`, `create_date`, `create_ip`, `last_post`, `flag`, `vip_time`, `guild_points`, `guild_points_stats`, `passed`, `block`, `refresh`) VALUES
 (1, '1', '060d38973b4ba4051fa6ca22f9acd4be7d1557fe', NULL, 1, 0, 0, 0, '', 0, 0, '0', '', 0, '', '', 9999, '', 0, 0, 0, 0, 0, 'unknown', 0, 0, 0, 0, 0, 0),
-(19, 'OGANZA', 'cbc389c77fc28d58bc1576aa3dcc7bec35023186', NULL, 5, 3630, 2147483634, 1503332349, 'jaurez75@hotmail.com', 1501604349, 0, 'YFTA9DPQCU', '', 0, '', '', 9999, '', 0, 0, 0, 2130706433, 0, 'unknown', 0, 0, 0, 0, 0, 0);
 
 -- --------------------------------------------------------
 
@@ -375,36 +374,6 @@ CREATE TABLE IF NOT EXISTS `houses` (
 --
 
 INSERT INTO `houses` (`id`, `owner`, `paid`, `warnings`, `name`, `rent`, `town_id`, `bid`, `bid_end`, `last_bid`, `highest_bidder`, `size`, `beds`) VALUES
-(1, 0, 0, 0, '', 0, 0, 0, 0, 0, 0, 5, 0),
-(2, 0, 0, 0, 'Market Street 4 (Shop)', 5105, 1, 0, 0, 0, 0, 203, 3),
-(3, 0, 0, 0, '', 0, 0, 0, 0, 0, 0, 4, 0),
-(4, 0, 0, 0, 'Market Street 3', 3475, 1, 0, 0, 0, 0, 149, 2),
-(5, 0, 0, 0, 'Market Street 2', 4925, 1, 0, 0, 0, 0, 190, 3),
-(6, 0, 0, 0, 'Market Street 1', 6680, 1, 0, 0, 0, 0, 241, 3),
-(7, 0, 0, 0, 'Old Lighthouse', 3610, 1, 0, 0, 0, 0, 120, 2),
-(8, 0, 0, 0, 'Seagull Walk 1', 5095, 1, 0, 0, 0, 0, 189, 2),
-(9, 0, 0, 0, 'Seagull Walk 2', 2765, 1, 0, 0, 0, 0, 116, 3),
-(10, 0, 0, 0, 'Dream Street 4', 3765, 1, 0, 0, 0, 0, 142, 4),
-(11, 0, 0, 0, 'Elm Street 2', 2665, 1, 0, 0, 0, 0, 108, 2),
-(12, 0, 0, 0, 'Elm Street 1', 2710, 1, 0, 0, 0, 0, 110, 2),
-(13, 0, 0, 0, 'Elm Street 3', 2855, 1, 0, 0, 0, 0, 113, 3),
-(14, 0, 0, 0, 'Elm Street 4', 3765, 1, 0, 0, 0, 0, 118, 2),
-(15, 0, 0, 0, 'Dream Street 3', 2710, 1, 0, 0, 0, 0, 117, 2),
-(16, 0, 0, 0, 'Dream Street 2', 3340, 1, 0, 0, 0, 0, 129, 2),
-(17, 0, 0, 0, '', 0, 0, 0, 0, 0, 0, 4, 0),
-(18, 0, 0, 0, 'Paupers Palace, Flat 13', 450, 1, 0, 0, 0, 0, 19, 1),
-(19, 0, 0, 0, 'Paupers Palace, Flat 12', 685, 1, 0, 0, 0, 0, 28, 2),
-(21, 0, 0, 0, '', 0, 0, 0, 0, 0, 0, 4, 0),
-(22, 0, 0, 0, '', 0, 0, 0, 0, 0, 0, 45, 0),
-(23, 0, 0, 0, 'Paupers Palace, Flat 14', 585, 1, 0, 0, 0, 0, 26, 1),
-(24, 0, 0, 0, 'Paupers Palace, Flat 15', 450, 1, 0, 0, 0, 0, 13, 1),
-(25, 0, 0, 0, 'Paupers Palace, Flat 16', 585, 1, 0, 0, 0, 0, 19, 1),
-(26, 0, 0, 0, 'Paupers Palace, Flat 17', 450, 1, 0, 0, 0, 0, 18, 1),
-(27, 0, 0, 0, 'Paupers Palace, Flat 18', 315, 1, 0, 0, 0, 0, 16, 1),
-(28, 0, 0, 0, 'Paupers Palace, Flat 01', 405, 1, 0, 0, 0, 0, 15, 1),
-(29, 0, 0, 0, 'Paupers Palace, Flat 02', 450, 1, 0, 0, 0, 0, 21, 1),
-(30, 0, 0, 0, 'Paupers Palace, Flat 03', 405, 1, 0, 0, 0, 0, 15, 1),
-(31, 0, 0, 0, 'Paupers Palace, Flat 04', 450, 1, 0, 0, 0, 0, 18, 1);
 
 -- --------------------------------------------------------
 
@@ -714,8 +683,6 @@ CREATE TABLE IF NOT EXISTS `players` (
 
 INSERT INTO `players` (`id`, `name`, `group_id`, `account_id`, `level`, `vocation`, `health`, `healthmax`, `experience`, `lookbody`, `lookfeet`, `lookhead`, `looklegs`, `looktype`, `lookaddons`, `maglevel`, `mana`, `manamax`, `manaspent`, `soul`, `town_id`, `posx`, `posy`, `posz`, `conditions`, `cap`, `sex`, `lastlogin`, `lastip`, `save`, `skull`, `skulltime`, `lastlogout`, `blessings`, `blessings1`, `blessings2`, `blessings3`, `blessings4`, `blessings5`, `blessings6`, `blessings7`, `blessings8`, `onlinetime`, `deletion`, `balance`, `offlinetraining_time`, `offlinetraining_skill`, `stamina`, `skill_fist`, `skill_fist_tries`, `skill_club`, `skill_club_tries`, `skill_sword`, `skill_sword_tries`, `skill_axe`, `skill_axe_tries`, `skill_dist`, `skill_dist_tries`, `skill_shielding`, `skill_shielding_tries`, `skill_fishing`, `skill_fishing_tries`, `deleted`, `description`, `comment`, `create_ip`, `create_date`, `hide_char`, `cast`, `skill_critical_hit_chance`, `skill_critical_hit_chance_tries`, `skill_critical_hit_damage`, `skill_critical_hit_damage_tries`, `skill_life_leech_chance`, `skill_life_leech_chance_tries`, `skill_life_leech_amount`, `skill_life_leech_amount_tries`, `skill_mana_leech_chance`, `skill_mana_leech_chance_tries`, `skill_mana_leech_amount`, `skill_mana_leech_amount_tries`, `skill_criticalhit_chance`, `skill_criticalhit_damage`, `skill_lifeleech_chance`, `skill_lifeleech_amount`, `skill_manaleech_chance`, `skill_manaleech_amount`, `prey_stamina_1`, `prey_stamina_2`, `prey_stamina_3`, `prey_column`, `bonus_reroll`, `xpboost_stamina`, `xpboost_value`, `marriage_status`, `hide_skills`, `hide_set`, `former`) VALUES
 (1, 'Rook Sample', 1, 1, 1, 0, 150, 150, 0, 106, 95, 78, 116, 128, 0, 0, 5, 5, 0, 0, 2, 32104, 32191, 6, '', 400, 0, 1503425375, 16777343, 1, 0, 0, 1503425383, 0, 0, 0, 0, 0, 0, 0, 0, 0, 211, 0, 0, 65535, -1, 2520, 10, 0, 10, 0, 10, 0, 10, 0, 10, 0, 10, 0, 10, 0, 0, '', '', 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, NULL, NULL, '-'),
-(161, 'Oganza', 5, 19, 1000, 8, 10000, 10000, 16566949800, 106, 95, 78, 116, 302, 0, 20, 10000, 10000, 854980, 200, 2, 15002, 15057, 8, 0x010020000002ffffffff0330210e001a001b0000000004e8030000050a00000006e8030000070a000000fe, 400, 1, 1503444405, 16777343, 1, 0, 0, 1503439134, 1, 1, 1, 1, 1, 1, 1, 1, 1, 32225, 0, 50000000000000, 42648, -1, 2520, 10, 0, 10, 0, 43, 274, 10, 0, 10, 0, 37, 293, 10, 0, 0, '', '', 2130706433, 1501604375, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 7200, 7200, 7200, 2, 6, 0, 0, 0, NULL, NULL, '-'),
-(162, 'Tchaka', 1, 19, 60, 8, 995, 995, 3307400, 0, 0, 0, 0, 1021, 3, 6, 315, 315, 253465, 200, 13, 32761, 31232, 7, '', 1855, 1, 1503432830, 16777343, 1, 0, 0, 1503432836, 1, 1, 1, 1, 1, 1, 1, 1, 1, 154804, 0, 1000000000000000, 24001, 13, 2520, 10, 0, 10, 0, 53, 1685, 10, 0, 10, 0, 52, 1582, 10, 0, 0, '', '', 2130706433, 1501604391, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 0, 0, 0, 0, NULL, NULL, '-');
 
 -- --------------------------------------------------------
 
@@ -759,7 +726,6 @@ CREATE TABLE IF NOT EXISTS `player_deaths` (
 --
 
 INSERT INTO `player_deaths` (`player_id`, `time`, `level`, `killed_by`, `is_player`, `mostdamage_by`, `mostdamage_is_player`, `unjustified`, `mostdamage_unjustified`) VALUES
-(162, 1503189714, 58, 'a hellspawn', 0, 'a hellspawn', 0, 0, 0);
 
 -- --------------------------------------------------------
 
@@ -782,7 +748,6 @@ CREATE TABLE IF NOT EXISTS `player_depotitems` (
 --
 
 INSERT INTO `player_depotitems` (`player_id`, `sid`, `pid`, `itemtype`, `count`, `attributes`) VALUES
-(161, 101, 1, 2466, 1, '');
 
 -- --------------------------------------------------------
 
@@ -828,44 +793,6 @@ CREATE TABLE IF NOT EXISTS `player_items` (
 
 INSERT INTO `player_items` (`player_id`, `pid`, `sid`, `itemtype`, `count`, `attributes`) VALUES
 (1, 11, 101, 26052, 1, ''),
-(162, 1, 101, 24810, 1, ''),
-(162, 2, 102, 2173, 1, 0x160100),
-(162, 3, 103, 1988, 1, ''),
-(162, 4, 104, 2494, 1, ''),
-(162, 5, 105, 25546, 1, ''),
-(162, 6, 106, 7404, 1, ''),
-(162, 7, 107, 2495, 1, ''),
-(162, 8, 108, 2195, 1, ''),
-(162, 11, 109, 26052, 1, ''),
-(162, 103, 110, 2160, 23, 0x0f17),
-(162, 103, 111, 2160, 100, 0x0f64),
-(162, 103, 112, 2789, 71, 0x0f47),
-(162, 103, 113, 2789, 100, 0x0f64),
-(162, 103, 114, 1988, 1, ''),
-(162, 114, 115, 7634, 5, 0x0f05),
-(162, 114, 116, 7618, 1, 0x0f01),
-(162, 114, 117, 7588, 83, 0x0f53),
-(162, 114, 118, 7588, 100, 0x0f64),
-(162, 114, 119, 7620, 98, 0x0f62),
-(162, 114, 120, 7620, 100, 0x0f64),
-(161, 1, 101, 2493, 1, 0x2229007b5b315d203d202242617369632043686f70222c5b345d203d2037323030302c5b375d203d20302c7d),
-(161, 3, 102, 1988, 1, ''),
-(161, 5, 103, 25546, 1, ''),
-(161, 11, 104, 26052, 1, ''),
-(161, 102, 105, 24810, 1, 0x10204e0000),
-(161, 102, 106, 2152, 40, 0x0f28),
-(161, 102, 107, 11113, 60, 0x0f3c),
-(161, 102, 108, 11113, 100, 0x0f64),
-(161, 102, 109, 2789, 49, 0x0f31),
-(161, 102, 110, 2789, 100, 0x0f64),
-(161, 102, 111, 2160, 94, 0x0f5e),
-(161, 102, 112, 26642, 5, 0x0f05),
-(161, 102, 113, 7620, 100, 0x0f64),
-(161, 102, 114, 7588, 100, 0x0f64),
-(161, 102, 115, 7634, 3, 0x0f03),
-(161, 102, 116, 26378, 1, ''),
-(161, 102, 117, 26377, 1, ''),
-(161, 102, 118, 2120, 1, '');
 
 -- --------------------------------------------------------
 
@@ -901,7 +828,6 @@ CREATE TABLE IF NOT EXISTS `player_misc` (
 --
 
 INSERT INTO `player_misc` (`player_id`, `info`) VALUES
-(161, 0x7b7d);
 
 -- --------------------------------------------------------
 
@@ -941,103 +867,6 @@ CREATE TABLE IF NOT EXISTS `player_prey` (
 --
 
 INSERT INTO `player_prey` (`player_id`, `name`, `mindex`, `mcolumn`) VALUES
-(150, 'mechanical fighter', 0, 0),
-(150, 'scarab', 1, 0),
-(150, 'kollos', 2, 0),
-(150, 'brimstone bug', 4, 0),
-(150, 'frazzlemaw', 5, 0),
-(150, 'spitter', 6, 0),
-(150, 'troll-trained salamander', 7, 0),
-(150, 'killer rabbit', 8, 0),
-(150, 'banshee', 0, 1),
-(150, 'greater death minion', 1, 1),
-(150, 'rahemos', 2, 1),
-(150, 'minotaur amazon', 3, 1),
-(150, 'clay guardian', 5, 1),
-(150, 'valkyrie', 6, 1),
-(150, 'sacred spider', 7, 1),
-(150, 'lizard zaogun', 8, 1),
-(150, 'enslaved dwarf', 0, 1),
-(150, 'kraknaknork', 1, 1),
-(150, 'mountain troll', 2, 1),
-(150, 'crystal wolf', 3, 1),
-(150, 'cave rat', 4, 1),
-(150, 'swampling', 5, 1),
-(150, 'monk', 6, 1),
-(150, 'spark of destruction', 7, 1),
-(150, 'slick water elemental', 8, 1),
-(163, 'insectoid scout', 0, 0),
-(163, 'diseased dan', 1, 0),
-(163, 'betrayed wraith', 2, 0),
-(163, 'latrivan', 3, 0),
-(163, 'human skeleton', 4, 0),
-(163, 'dark torturer', 5, 0),
-(163, 'broken shaper', 6, 0),
-(163, 'destroyer', 7, 0),
-(163, 'enlightened of the cult', 8, 0),
-(163, 'crazed dwarf', 0, 1),
-(163, 'enraged crystal golem', 1, 1),
-(163, 'crypt shambler', 2, 1),
-(163, 'mutated rat', 3, 1),
-(163, 'bullwark', 4, 1),
-(163, 'shaburak demon', 5, 1),
-(163, 'massive fire elemental', 6, 1),
-(163, 'guzzlemaw', 7, 1),
-(163, 'brittle skeleton', 8, 1),
-(161, 'skunk', 0, 0),
-(161, 'bone beast', 1, 0),
-(161, 'slick water elemental', 2, 0),
-(161, 'splasher', 3, 0),
-(161, 'spit nettle', 4, 0),
-(161, 'wasp', 5, 0),
-(161, 'monk', 6, 0),
-(161, 'master kill', 7, 0),
-(161, 'yeti', 8, 0),
-(161, 'minotaur mage', 0, 1),
-(161, 'gozzler', 1, 1),
-(161, 'crystal spider', 2, 1),
-(161, 'undead minion', 3, 1),
-(161, 'amazone furywizard', 4, 1),
-(161, 'braindeath', 5, 1),
-(161, 'fat rat', 6, 1),
-(161, 'dworc voodoomaster', 7, 1),
-(161, 'eternal guardian', 8, 1),
-(161, 'hellgorak', 0, 2),
-(161, 'lizard snakecharmer', 1, 2),
-(161, 'pirate cutthroat', 2, 2),
-(161, 'crystal wolf', 3, 2),
-(161, 'spectre', 4, 2),
-(161, 'waver', 5, 2),
-(161, 'werewolf', 6, 2),
-(161, 'terror bird', 7, 2),
-(161, 'verminor', 8, 2),
-(162, 'dragon hatchling', 0, 2),
-(162, 'chakoya windcaller', 1, 2),
-(162, 'broken shaper', 2, 2),
-(162, 'unborn soul', 3, 2),
-(162, 'breach brood', 4, 2),
-(162, 'dragon', 5, 2),
-(162, 'gold demon', 6, 2),
-(162, 'crystal spider', 7, 2),
-(162, 'mooh''tah warrior', 8, 2),
-(162, 'cyclops', 0, 0),
-(162, 'barbarian brutetamer', 1, 0),
-(162, 'twisted shaper', 2, 0),
-(162, 'mutated snake', 3, 0),
-(162, 'crab', 4, 0),
-(162, 'lizard noble', 5, 0),
-(162, 'dwarf guard', 6, 0),
-(162, 'bazir', 7, 0),
-(162, 'sea serpent', 8, 0),
-(162, 'gozzler', 0, 1),
-(162, 'orc marauder', 1, 1),
-(162, 'valkyrie', 2, 1),
-(162, 'crustacea gigantica', 3, 1),
-(162, 'hellflayer', 4, 1),
-(162, 'walker', 5, 1),
-(162, 'gladiator', 6, 1),
-(162, 'eye of the seven', 7, 1),
-(162, 'massive fire elemental', 8, 1);
 
 -- --------------------------------------------------------
 
@@ -1063,10 +892,6 @@ CREATE TABLE IF NOT EXISTS `player_preytimes` (
 --
 
 INSERT INTO `player_preytimes` (`player_id`, `bonus_type1`, `bonus_value1`, `bonus_name1`, `bonus_type2`, `bonus_value2`, `bonus_name2`, `bonus_type3`, `bonus_value3`, `bonus_name3`) VALUES
-(150, 2, 16, 'Azure Frog', 3, 16, 'Morguthis', 0, 0, ''),
-(161, 1, 16, 'Slick Water Elemental', 3, 19, 'Minotaur Mage', 0, 17, 'Pirate Cutthroat'),
-(162, 0, 0, '', 0, 0, '', 0, 0, ''),
-(163, 0, 0, '', 0, 0, '', 0, 0, ''),
 (1, 0, 0, '', 0, 0, '', 0, 0, '');
 
 -- --------------------------------------------------------
@@ -1126,37 +951,6 @@ CREATE TABLE IF NOT EXISTS `player_storage` (
 
 INSERT INTO `player_storage` (`player_id`, `key`, `value`) VALUES
 (1, 50722, 1503425385),
-(161, 0, 1502044733),
-(161, 20279, 4),
-(161, 50722, 0),
-(161, 50730, 1),
-(161, 357812, 1),
-(161, 8420390, 0),
-(161, 8420391, 0),
-(161, 8420392, 0),
-(162, 0, 1501699942),
-(162, 1, 796),
-(162, 47, 0),
-(162, 4687, 1),
-(162, 10042, 1),
-(162, 10043, 1),
-(162, 10044, 1),
-(162, 10045, 1),
-(162, 20279, 39),
-(162, 50722, 1503432840),
-(162, 99000, 60),
-(162, 99020, 20000),
-(162, 99963, 50),
-(162, 110012, 0),
-(162, 999999, 2148),
-(162, 1000000, 2152),
-(162, 8420390, 0),
-(162, 8420391, 0),
-(162, 10001001, 66912259),
-(162, 10002001, 32),
-(162, 10002002, 65537),
-(162, 10002004, 3670016),
-(162, 10002011, 32);
 
 -- --------------------------------------------------------
 
@@ -1225,44 +1019,6 @@ CREATE TABLE IF NOT EXISTS `store_history` (
 --
 
 INSERT INTO `store_history` (`account_id`, `mode`, `description`, `coin_amount`, `time`, `timestamp`, `id`, `coins`) VALUES
-(19, 0, 'Jade Lion', -60, 1501700119, 0, 0, 0),
-(19, 0, 'Twist of Fate', -15, 1502131520, 0, 0, 0),
-(19, 0, 'The Wisdom of Solitude', -15, 1502131613, 0, 0, 0),
-(19, 0, 'The Spark of the Phoenix', -20, 1502131622, 0, 0, 0),
-(19, 0, 'The Fire of the Suns', -15, 1502131629, 0, 0, 0),
-(19, 0, 'The Spiritual Shielding', -15, 1502131636, 0, 0, 0),
-(19, 0, 'The Embrace of Tibia', -15, 1502131643, 0, 0, 0),
-(19, 0, 'The Heart of the Mountain', -25, 1502131649, 0, 0, 0),
-(19, 0, 'Blood of the Mountain', -25, 1502131655, 0, 0, 0),
-(19, 0, '1x Prey Bonus Reroll', -5, 1502131685, 0, 0, 0),
-(19, 0, '5x 5x Prey Bonus Reroll', -25, 1502131692, 0, 0, 0),
-(19, 0, 'Permanent Prey Slot', -450, 1502131701, 0, 0, 0),
-(19, 0, 'Temple Teleport', -25, 1502131709, 0, 0, 0),
-(19, 0, '1x Gold Pouch', -900, 1502131717, 0, 0, 0),
-(19, 0, '1x Gold Converter', -900, 1502131724, 0, 0, 0),
-(19, 0, 'Permanent Prey Slot', -450, 1502132070, 0, 0, 0),
-(19, 0, 'Full Pharao Pastor', -750, 1502929771, 0, 0, 0),
-(19, 0, 'Blazing Unicorn', -30, 1502929784, 0, 0, 0),
-(19, 0, 'Arctic Unicorn', -30, 1502929794, 0, 0, 0),
-(19, 0, 'Prismatic Unicorn', -30, 1502929801, 0, 0, 0),
-(19, 0, '1x White Fur Carpet', -15, 1502930206, 0, 0, 0),
-(19, 0, '1x White Fur Carpet', -15, 1502930216, 0, 0, 0),
-(19, 0, '1x White Fur Carpet', -15, 1502930222, 0, 0, 0),
-(19, 0, '1x White Fur Carpet', -15, 1502930229, 0, 0, 0),
-(19, 0, '1x White Fur Carpet', -15, 1502930236, 0, 0, 0),
-(19, 0, '1x White Fur Carpet', -15, 1502930242, 0, 0, 0),
-(19, 0, '1x White Fur Carpet', -15, 1502930301, 0, 0, 0),
-(19, 0, '1x White Fur Carpet', -15, 1502930308, 0, 0, 0),
-(19, 0, '1x Magnificent Trunk', -35, 1502930365, 0, 0, 0),
-(19, 0, '1x Health Cask', -4, 1503267826, 0, 0, 0),
-(19, 0, '1x Strong Health Cask', -9, 1503267947, 0, 0, 0),
-(19, 0, '1x Health Cask', -4, 1503268042, 0, 0, 0),
-(19, 0, '1x Strong Health Cask', -9, 1503269097, 0, 0, 0),
-(19, 0, '1x Strong Health Cask', -9, 1503269300, 0, 0, 0),
-(19, 0, '1x Strong Health Cask', -9, 1503269626, 0, 0, 0),
-(19, 0, '1x Strong Health Cask', -9, 1503269976, 0, 0, 0),
-(19, 0, '1x Health Cask', -4, 1503362767, 0, 0, 0),
-(19, 0, '1x Strong Health Cask', -9, 1503364606, 0, 0, 0);
 
 -- --------------------------------------------------------
 
