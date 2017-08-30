@@ -22,12 +22,12 @@ local function creatureSayCallback(cid, type, msg)
 			return true
 		end
 
-		npcHandler:say('Do you want to purchase a weekly ticket for the ore wagons? With it you can travel freely and swiftly through Kazordoon for one week. 250 gold only. Deal?', cid)
+		npcHandler:say('Do you want to purchase a weekly ticket for the ore wagons? With it you can travel freely and swiftly through Kazordoon for one week. Free. Deal?', cid)
 		npcHandler.topic[cid] = 1
 	elseif msgcontains(msg, 'yes') and npcHandler.topic[cid] > 0 then
 		local player = Player(cid)
 		if npcHandler.topic[cid] == 1 then
-			if not player:removeMoney(250) then
+			if not player:removeMoney(0) then
 				npcHandler:say('You don\'t have enough money.', cid)
 				npcHandler.topic[cid] = 0
 				return true
@@ -50,7 +50,7 @@ local function addTravelKeyword(keyword, cost, discount, destination, action)
 		travelKeyword:addChildKeyword({'no'}, StdModule.say, {npcHandler = npcHandler, text = 'We would like to serve you some time.', reset = true})
 end
 
-addTravelKeyword('farmine', 210, {'postman', 'new frontier'},
+addTravelKeyword('farmine', 0, {'postman', 'new frontier'},
 	function(player)
 		local destination = Position(33025, 31553, 14)
 		--if player:getStorageValue(Storage.TheNewFrontier.Mission05) == 7 then --if The New Frontier Quest 'Mission 05: Getting Things Busy' complete then Stage 3
@@ -65,7 +65,7 @@ addTravelKeyword('farmine', 210, {'postman', 'new frontier'},
 		return destination
 	end
 )
-addTravelKeyword('cormaya', 160, 'postman', Position(33311, 31989, 15),
+addTravelKeyword('cormaya', 0, 'postman', Position(33311, 31989, 15),
 	function(player)
 		if player:getStorageValue(Storage.postman.Mission01) == 4 then
 			player:setStorageValue(Storage.postman.Mission01, 5)
