@@ -20,11 +20,11 @@
 #ifndef FS_DEFINITIONS_H_877452FEC245450C9F96B8FD268D8963
 #define FS_DEFINITIONS_H_877452FEC245450C9F96B8FD268D8963
 
-static constexpr auto STATUS_SERVER_NAME = "Oganza Server";
+static constexpr auto STATUS_SERVER_NAME = "Meu Server";
 static constexpr auto STATUS_SERVER_VERSION = "11";
 static constexpr auto MINOR_VERSION = "44";
-static constexpr auto STATUS_SERVER_DEVELOPERS = "Jaurez Oliveira";
-static constexpr auto GIT_REPO = "https://github.com/jaurez/Oganza-Server/";
+static constexpr auto STATUS_SERVER_DEVELOPERS = "EU";
+static constexpr auto GIT_REPO = "MEU SITE/";
 
 static constexpr auto CLIENT_VERSION_MIN = 1100;
 static constexpr auto CLIENT_VERSION_MAX = 1144;
