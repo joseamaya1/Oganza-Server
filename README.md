@@ -46,9 +46,9 @@ Iddle time de 60 minutos
 
 [RME](http://www.mediafire.com/file/dsebb45v585ap8a/Remere%27s+Map+Editor.rar)
 
-## Cliente 11.44
+## Cliente 11.46
 
-[Cliente](http://www.mediafire.com/file/vtada7a6954zymk/Tibia+11.44.rar) com ip 127.0.0.1
+[Cliente](http://www.mediafire.com/file/4j3tsd7i3tgus44/Tibia+11.46.rar) com ip 127.0.0.1
 
 ## Suporte com bugs e contribuição
 
