@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Servidor: localhost
--- Tempo de Geração: Ago 30, 2017 as 03:42 
+-- Tempo de Geração: Ago 31, 2017 as 05:42 
 -- Versão do Servidor: 5.1.41
 -- Versão do PHP: 5.3.1
 
@@ -67,7 +67,7 @@ CREATE TABLE IF NOT EXISTS `accounts` (
 --
 
 INSERT INTO `accounts` (`id`, `name`, `password`, `secret`, `type`, `premdays`, `coins`, `lastday`, `email`, `creation`, `vote`, `key`, `email_new`, `email_new_time`, `rlname`, `location`, `page_access`, `email_code`, `next_email`, `premium_points`, `create_date`, `create_ip`, `last_post`, `flag`, `vip_time`, `guild_points`, `guild_points_stats`, `passed`, `block`, `refresh`) VALUES
-(1, '1', '060d38973b4ba4051fa6ca22f9acd4be7d1557fe', NULL, 1, 0, 0, 0, '', 0, 0, '0', '', 0, '', '', 9999, '', 0, 0, 0, 0, 0, 'unknown', 0, 0, 0, 0, 0, 0),
+(1, '1', '060d38973b4ba4051fa6ca22f9acd4be7d1557fe', NULL, 1, 0, 0, 0, '', 0, 0, '0', '', 0, '', '', 9999, '', 0, 0, 0, 0, 0, 'unknown', 0, 0, 0, 0, 0, 0);
 
 -- --------------------------------------------------------
 
@@ -367,13 +367,43 @@ CREATE TABLE IF NOT EXISTS `houses` (
   PRIMARY KEY (`id`),
   KEY `owner` (`owner`),
   KEY `town_id` (`town_id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=3035 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=32 ;
 
 --
 -- Extraindo dados da tabela `houses`
 --
 
 INSERT INTO `houses` (`id`, `owner`, `paid`, `warnings`, `name`, `rent`, `town_id`, `bid`, `bid_end`, `last_bid`, `highest_bidder`, `size`, `beds`) VALUES
+(1, 0, 0, 0, '', 0, 0, 0, 0, 0, 0, 5, 0),
+(2, 0, 0, 0, 'Market Street 4 (Shop)', 5105, 1, 0, 0, 0, 0, 203, 3),
+(3, 0, 0, 0, '', 0, 0, 0, 0, 0, 0, 4, 0),
+(4, 0, 0, 0, 'Market Street 3', 3475, 1, 0, 0, 0, 0, 149, 2),
+(5, 0, 0, 0, 'Market Street 2', 4925, 1, 0, 0, 0, 0, 190, 3),
+(6, 0, 0, 0, 'Market Street 1', 6680, 1, 0, 0, 0, 0, 241, 3),
+(7, 0, 0, 0, 'Old Lighthouse', 3610, 1, 0, 0, 0, 0, 120, 2),
+(8, 0, 0, 0, 'Seagull Walk 1', 5095, 1, 0, 0, 0, 0, 189, 2),
+(9, 0, 0, 0, 'Seagull Walk 2', 2765, 1, 0, 0, 0, 0, 116, 3),
+(10, 0, 0, 0, 'Dream Street 4', 3765, 1, 0, 0, 0, 0, 142, 4),
+(11, 0, 0, 0, 'Elm Street 2', 2665, 1, 0, 0, 0, 0, 108, 2),
+(12, 0, 0, 0, 'Elm Street 1', 2710, 1, 0, 0, 0, 0, 110, 2),
+(13, 0, 0, 0, 'Elm Street 3', 2855, 1, 0, 0, 0, 0, 113, 3),
+(14, 0, 0, 0, 'Elm Street 4', 3765, 1, 0, 0, 0, 0, 118, 2),
+(15, 0, 0, 0, 'Dream Street 3', 2710, 1, 0, 0, 0, 0, 117, 2),
+(16, 0, 0, 0, 'Dream Street 2', 3340, 1, 0, 0, 0, 0, 129, 2),
+(17, 0, 0, 0, '', 0, 0, 0, 0, 0, 0, 4, 0),
+(18, 0, 0, 0, 'Paupers Palace, Flat 13', 450, 1, 0, 0, 0, 0, 19, 1),
+(19, 0, 0, 0, 'Paupers Palace, Flat 12', 685, 1, 0, 0, 0, 0, 28, 2),
+(21, 0, 0, 0, '', 0, 0, 0, 0, 0, 0, 4, 0),
+(22, 0, 0, 0, '', 0, 0, 0, 0, 0, 0, 45, 0),
+(23, 0, 0, 0, 'Paupers Palace, Flat 14', 585, 1, 0, 0, 0, 0, 26, 1),
+(24, 0, 0, 0, 'Paupers Palace, Flat 15', 450, 1, 0, 0, 0, 0, 13, 1),
+(25, 0, 0, 0, 'Paupers Palace, Flat 16', 585, 1, 0, 0, 0, 0, 19, 1),
+(26, 0, 0, 0, 'Paupers Palace, Flat 17', 450, 1, 0, 0, 0, 0, 18, 1),
+(27, 0, 0, 0, 'Paupers Palace, Flat 18', 315, 1, 0, 0, 0, 0, 16, 1),
+(28, 0, 0, 0, 'Paupers Palace, Flat 01', 405, 1, 0, 0, 0, 0, 15, 1),
+(29, 0, 0, 0, 'Paupers Palace, Flat 02', 450, 1, 0, 0, 0, 0, 21, 1),
+(30, 0, 0, 0, 'Paupers Palace, Flat 03', 405, 1, 0, 0, 0, 0, 15, 1),
+(31, 0, 0, 0, 'Paupers Palace, Flat 04', 450, 1, 0, 0, 0, 0, 18, 1);
 
 -- --------------------------------------------------------
 
@@ -682,7 +712,7 @@ CREATE TABLE IF NOT EXISTS `players` (
 --
 
 INSERT INTO `players` (`id`, `name`, `group_id`, `account_id`, `level`, `vocation`, `health`, `healthmax`, `experience`, `lookbody`, `lookfeet`, `lookhead`, `looklegs`, `looktype`, `lookaddons`, `maglevel`, `mana`, `manamax`, `manaspent`, `soul`, `town_id`, `posx`, `posy`, `posz`, `conditions`, `cap`, `sex`, `lastlogin`, `lastip`, `save`, `skull`, `skulltime`, `lastlogout`, `blessings`, `blessings1`, `blessings2`, `blessings3`, `blessings4`, `blessings5`, `blessings6`, `blessings7`, `blessings8`, `onlinetime`, `deletion`, `balance`, `offlinetraining_time`, `offlinetraining_skill`, `stamina`, `skill_fist`, `skill_fist_tries`, `skill_club`, `skill_club_tries`, `skill_sword`, `skill_sword_tries`, `skill_axe`, `skill_axe_tries`, `skill_dist`, `skill_dist_tries`, `skill_shielding`, `skill_shielding_tries`, `skill_fishing`, `skill_fishing_tries`, `deleted`, `description`, `comment`, `create_ip`, `create_date`, `hide_char`, `cast`, `skill_critical_hit_chance`, `skill_critical_hit_chance_tries`, `skill_critical_hit_damage`, `skill_critical_hit_damage_tries`, `skill_life_leech_chance`, `skill_life_leech_chance_tries`, `skill_life_leech_amount`, `skill_life_leech_amount_tries`, `skill_mana_leech_chance`, `skill_mana_leech_chance_tries`, `skill_mana_leech_amount`, `skill_mana_leech_amount_tries`, `skill_criticalhit_chance`, `skill_criticalhit_damage`, `skill_lifeleech_chance`, `skill_lifeleech_amount`, `skill_manaleech_chance`, `skill_manaleech_amount`, `prey_stamina_1`, `prey_stamina_2`, `prey_stamina_3`, `prey_column`, `bonus_reroll`, `xpboost_stamina`, `xpboost_value`, `marriage_status`, `hide_skills`, `hide_set`, `former`) VALUES
-(1, 'Rook Sample', 1, 1, 1, 0, 150, 150, 0, 106, 95, 78, 116, 128, 0, 0, 5, 5, 0, 0, 2, 32104, 32191, 6, '', 400, 0, 1503425375, 16777343, 1, 0, 0, 1503425383, 0, 0, 0, 0, 0, 0, 0, 0, 0, 211, 0, 0, 65535, -1, 2520, 10, 0, 10, 0, 10, 0, 10, 0, 10, 0, 10, 0, 10, 0, 0, '', '', 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, NULL, NULL, '-'),
+(1, 'Rook Sample', 1, 1, 1, 0, 150, 150, 0, 106, 95, 78, 116, 128, 0, 0, 5, 5, 0, 0, 6, 32097, 32219, 7, '', 400, 0, 1503425375, 16777343, 1, 0, 0, 1503425383, 0, 0, 0, 0, 0, 0, 0, 0, 0, 211, 0, 0, 65535, -1, 2520, 10, 0, 10, 0, 10, 0, 10, 0, 10, 0, 10, 0, 10, 0, 0, '', '', 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, NULL, NULL, '-');
 
 -- --------------------------------------------------------
 
@@ -725,7 +755,6 @@ CREATE TABLE IF NOT EXISTS `player_deaths` (
 -- Extraindo dados da tabela `player_deaths`
 --
 
-INSERT INTO `player_deaths` (`player_id`, `time`, `level`, `killed_by`, `is_player`, `mostdamage_by`, `mostdamage_is_player`, `unjustified`, `mostdamage_unjustified`) VALUES
 
 -- --------------------------------------------------------
 
@@ -747,7 +776,6 @@ CREATE TABLE IF NOT EXISTS `player_depotitems` (
 -- Extraindo dados da tabela `player_depotitems`
 --
 
-INSERT INTO `player_depotitems` (`player_id`, `sid`, `pid`, `itemtype`, `count`, `attributes`) VALUES
 
 -- --------------------------------------------------------
 
@@ -792,7 +820,7 @@ CREATE TABLE IF NOT EXISTS `player_items` (
 --
 
 INSERT INTO `player_items` (`player_id`, `pid`, `sid`, `itemtype`, `count`, `attributes`) VALUES
-(1, 11, 101, 26052, 1, ''),
+(1, 11, 101, 26052, 1, '');
 
 -- --------------------------------------------------------
 
@@ -828,6 +856,7 @@ CREATE TABLE IF NOT EXISTS `player_misc` (
 --
 
 INSERT INTO `player_misc` (`player_id`, `info`) VALUES
+(161, 0x7b7d);
 
 -- --------------------------------------------------------
 
@@ -867,6 +896,103 @@ CREATE TABLE IF NOT EXISTS `player_prey` (
 --
 
 INSERT INTO `player_prey` (`player_id`, `name`, `mindex`, `mcolumn`) VALUES
+(150, 'mechanical fighter', 0, 0),
+(150, 'scarab', 1, 0),
+(150, 'kollos', 2, 0),
+(150, 'brimstone bug', 4, 0),
+(150, 'frazzlemaw', 5, 0),
+(150, 'spitter', 6, 0),
+(150, 'troll-trained salamander', 7, 0),
+(150, 'killer rabbit', 8, 0),
+(150, 'banshee', 0, 1),
+(150, 'greater death minion', 1, 1),
+(150, 'rahemos', 2, 1),
+(150, 'minotaur amazon', 3, 1),
+(150, 'clay guardian', 5, 1),
+(150, 'valkyrie', 6, 1),
+(150, 'sacred spider', 7, 1),
+(150, 'lizard zaogun', 8, 1),
+(150, 'enslaved dwarf', 0, 1),
+(150, 'kraknaknork', 1, 1),
+(150, 'mountain troll', 2, 1),
+(150, 'crystal wolf', 3, 1),
+(150, 'cave rat', 4, 1),
+(150, 'swampling', 5, 1),
+(150, 'monk', 6, 1),
+(150, 'spark of destruction', 7, 1),
+(150, 'slick water elemental', 8, 1),
+(163, 'insectoid scout', 0, 0),
+(163, 'diseased dan', 1, 0),
+(163, 'betrayed wraith', 2, 0),
+(163, 'latrivan', 3, 0),
+(163, 'human skeleton', 4, 0),
+(163, 'dark torturer', 5, 0),
+(163, 'broken shaper', 6, 0),
+(163, 'destroyer', 7, 0),
+(163, 'enlightened of the cult', 8, 0),
+(163, 'crazed dwarf', 0, 1),
+(163, 'enraged crystal golem', 1, 1),
+(163, 'crypt shambler', 2, 1),
+(163, 'mutated rat', 3, 1),
+(163, 'bullwark', 4, 1),
+(163, 'shaburak demon', 5, 1),
+(163, 'massive fire elemental', 6, 1),
+(163, 'guzzlemaw', 7, 1),
+(163, 'brittle skeleton', 8, 1),
+(161, 'skunk', 0, 0),
+(161, 'bone beast', 1, 0),
+(161, 'slick water elemental', 2, 0),
+(161, 'splasher', 3, 0),
+(161, 'spit nettle', 4, 0),
+(161, 'wasp', 5, 0),
+(161, 'monk', 6, 0),
+(161, 'master kill', 7, 0),
+(161, 'yeti', 8, 0),
+(161, 'minotaur mage', 0, 1),
+(161, 'gozzler', 1, 1),
+(161, 'crystal spider', 2, 1),
+(161, 'undead minion', 3, 1),
+(161, 'amazone furywizard', 4, 1),
+(161, 'braindeath', 5, 1),
+(161, 'fat rat', 6, 1),
+(161, 'dworc voodoomaster', 7, 1),
+(161, 'eternal guardian', 8, 1),
+(161, 'hellgorak', 0, 2),
+(161, 'lizard snakecharmer', 1, 2),
+(161, 'pirate cutthroat', 2, 2),
+(161, 'crystal wolf', 3, 2),
+(161, 'spectre', 4, 2),
+(161, 'waver', 5, 2),
+(161, 'werewolf', 6, 2),
+(161, 'terror bird', 7, 2),
+(161, 'verminor', 8, 2),
+(162, 'dragon hatchling', 0, 2),
+(162, 'chakoya windcaller', 1, 2),
+(162, 'broken shaper', 2, 2),
+(162, 'unborn soul', 3, 2),
+(162, 'breach brood', 4, 2),
+(162, 'dragon', 5, 2),
+(162, 'gold demon', 6, 2),
+(162, 'crystal spider', 7, 2),
+(162, 'mooh''tah warrior', 8, 2),
+(162, 'cyclops', 0, 0),
+(162, 'barbarian brutetamer', 1, 0),
+(162, 'twisted shaper', 2, 0),
+(162, 'mutated snake', 3, 0),
+(162, 'crab', 4, 0),
+(162, 'lizard noble', 5, 0),
+(162, 'dwarf guard', 6, 0),
+(162, 'bazir', 7, 0),
+(162, 'sea serpent', 8, 0),
+(162, 'gozzler', 0, 1),
+(162, 'orc marauder', 1, 1),
+(162, 'valkyrie', 2, 1),
+(162, 'crustacea gigantica', 3, 1),
+(162, 'hellflayer', 4, 1),
+(162, 'walker', 5, 1),
+(162, 'gladiator', 6, 1),
+(162, 'eye of the seven', 7, 1),
+(162, 'massive fire elemental', 8, 1);
 
 -- --------------------------------------------------------
 
@@ -892,6 +1018,10 @@ CREATE TABLE IF NOT EXISTS `player_preytimes` (
 --
 
 INSERT INTO `player_preytimes` (`player_id`, `bonus_type1`, `bonus_value1`, `bonus_name1`, `bonus_type2`, `bonus_value2`, `bonus_name2`, `bonus_type3`, `bonus_value3`, `bonus_name3`) VALUES
+(150, 2, 16, 'Azure Frog', 3, 16, 'Morguthis', 0, 0, ''),
+(161, 1, 16, 'Slick Water Elemental', 3, 19, 'Minotaur Mage', 0, 17, 'Pirate Cutthroat'),
+(162, 0, 0, '', 0, 0, '', 0, 0, ''),
+(163, 0, 0, '', 0, 0, '', 0, 0, ''),
 (1, 0, 0, '', 0, 0, '', 0, 0, '');
 
 -- --------------------------------------------------------
@@ -950,7 +1080,7 @@ CREATE TABLE IF NOT EXISTS `player_storage` (
 --
 
 INSERT INTO `player_storage` (`player_id`, `key`, `value`) VALUES
-(1, 50722, 1503425385),
+(1, 50722, 1503425385);
 
 -- --------------------------------------------------------
 
@@ -1018,7 +1148,6 @@ CREATE TABLE IF NOT EXISTS `store_history` (
 -- Extraindo dados da tabela `store_history`
 --
 
-INSERT INTO `store_history` (`account_id`, `mode`, `description`, `coin_amount`, `time`, `timestamp`, `id`, `coins`) VALUES
 
 -- --------------------------------------------------------
 
