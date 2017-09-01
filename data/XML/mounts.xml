@@ -113,6 +113,9 @@
 	<mount id="111" clientid="960" name="Ember Saurian" speed="20" premium="yes" />
 	<mount id="112" clientid="961" name="Lagoon Saurian" speed="20" premium="yes" />
 	<mount id="113" clientid="1017" name="Blazing Unicorn" speed="20" premium="yes" />
-	<mount id="114" clientid="1018" name="Arctic Unicorn" speed="20" premium="yes" />
-	<mount id="115" clientid="1019" name="Prismatic Unicorn" speed="20" premium="yes" />
-	</mounts>
+	<mount id="114" clientid="1018" name="Artic Unicorn" speed="20" premium="yes" />
+	<mount id="115" clientid="1019" name="Prismatic unicorn" speed="20" premium="yes" />
+	<mount id="116" clientid="1025" name="Spider Rush" speed="20" premium="yes" />
+	<mount id="117" clientid="1026" name="Spider Rush Gold" speed="20" premium="yes" />
+	<mount id="118" clientid="1027" name="Spider Rush Platinum" speed="20" premium="yes" />
+</mounts>
