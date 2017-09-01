@@ -1,4 +1,4 @@
-# Oganza Server 11.44 Global - mapas extras - ilha 999 com área de hunt custom
+# Oganza Server 11.46 Global - mapas extras - ilha 999 com área de hunt custom
 
 Servidor sendo atualizado diariamente
 (não esqueça de extrair o mapa)
