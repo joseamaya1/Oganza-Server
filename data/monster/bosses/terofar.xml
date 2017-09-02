@@ -80,7 +80,7 @@
         <item id="8891" chance="14750" /><!-- paladin armor -->
 		<item id="2515" chance="14750" /><!-- guardian shield -->
 		<item id="8877" chance="3500"/><!-- lavos armor -->
-        <item id="8051" chance="4500"/><!-- voltage armor -->
+        <item id="8879" chance="4500"/><!-- voltage armor -->
 		<item id="2498" chance="4500"/><!-- royal helmet -->
         <item id="7590" countmax="8" chance="6250"/><!-- great mana potion -->
         <item id="8472" countmax="8" chance="56250"/><!-- great spirit potion -->
