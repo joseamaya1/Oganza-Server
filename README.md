@@ -50,14 +50,12 @@ Iddle time de 60 minutos
 
 [Cliente](http://www.mediafire.com/file/4j3tsd7i3tgus44/Tibia+11.46.rar) com ip 127.0.0.1
 
+## Htdocs GESIOR compatível
+
+[HTDOCS](http://www.mediafire.com/file/u5chh776s87sgwh/htdocs.rar) com pasta store completa
+
 ## Suporte com bugs e contribuição
 
 Para reportar bugs use o [issues](https://github.com/jaurez/Oganza-Server/issues/new)
 
 E para mandar sua contribuição use o [Pull Requests](https://github.com/jaurez/Oganza-Server/compare)
-
-
-
-
-
-
