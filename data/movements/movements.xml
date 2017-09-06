@@ -3,14 +3,15 @@
 <!-- CastleEvent -->
 <movevent event="StepIn" actionid="39391" script="castleEvent/entradaCastelo.lua" />
 
-<!-- Snow Ball War -->
-<movevent event="StepIn" actionid="10101" script="SnowBall_Event.lua"/>
-<movevent event="StepIn" actionid="10102" script="SnowBall_Event.lua"/>
+<!-- Bomberman Event -->
+	<movevent type="StepIn" actionid ="2880" event="script" value="events/snowballmovement.lua"/>
 
-<!-- enchanted forest -->
-<!--<movevent event="StepIn" actionid="5310" script="eforest/magicTp.lua"/>-->
-<!--<movevent event="StepIn" actionid="19027" script="eforest/enterTp.lua" />-->
+	<!-- Bomberman Event -->
+	<movevent event="StepIn" actionid="4544" script="events/bomberman_minigame_movements.lua" />
 
+	<!-- Enchanted Florest -->
+	<movevent event="StepIn" actionid="5310" script="events/magicTp.lua"/>-->
+	<movevent event="StepIn" actionid="19027" script="events/enterTp.lua" />-->
 
 	<movevent event="StepIn" actionid="50998" script="rookgaard/levelbridge.lua" />
 	<!-- Dawnport -->
