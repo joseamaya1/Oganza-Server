@@ -1,8 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <creaturescripts>
-<!-- Castle Event -->
-	<event type="death" name="DeathKing" script="castleEvent/deathKing.lua"/>
-
 <!--recompensa por lvl-->
 <event type="advance" name="Recompensa" script="recompensa.lua"/>
 <!--autoloot-->
