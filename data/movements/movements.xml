@@ -1,19 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <movements>
-<!-- CastleEvent -->
-<movevent event="StepIn" actionid="39391" script="castleEvent/entradaCastelo.lua" />
-
-<!-- Bomberman Event -->
-	<movevent type="StepIn" actionid ="2880" event="script" value="events/snowballmovement.lua"/>
-
-	<!-- Bomberman Event -->
-	<movevent event="StepIn" actionid="4544" script="events/bomberman_minigame_movements.lua" />
-
-	<!-- Enchanted Florest -->
-	<movevent event="StepIn" actionid="5310" script="events/magicTp.lua"/>-->
-	<movevent event="StepIn" actionid="19027" script="events/enterTp.lua" />-->
-
-	<movevent event="StepIn" actionid="50998" script="rookgaard/levelbridge.lua" />
+        <movevent event="StepIn" actionid="50998" script="rookgaard/levelbridge.lua" />
 	<!-- Dawnport -->
 	<movevent event="StepIn" fromaid="2001" toaid="2004" script="vocationtrial.lua" />
 
