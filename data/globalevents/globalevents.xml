@@ -1,12 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <globalevents>
-<!-- Castle Event -->
-    <globalevent name="CastleEventTime" time="15:05:00" script="castleEvent/tempo.lua"/>
-    <globalevent name="CastleEventStartup" type="startup" script="castleEvent/startup.lua"/>
-
-<!-- Snowball War Event -->
-		<globalevent name="StartSBW" time="23:00" event="script" value="events/snowballglobalevent.lua"/>
-
 	<!-- Bosses Quests -->
 	<globalevent name="Obujos" time="17:59:00" script="bosses/Obujos.lua"/>
 	<globalevent name="Tanjis" time="14:59:00" script="bosses/Tanjis.lua"/>
