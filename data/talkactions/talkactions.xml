@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <talkactions>
+<!-- Bomberman Event -->
+	<talkaction words="!bomb" script="bomberman_minigame_talkaction.lua"/>
+	
+    <!-- Snowball War Event -->
+	<talkaction words="!snowball" event="script" value="snowballtalk.lua"/>
 
-<!-- Snow Ball War -->
-	<talkaction words="!snowball" separator=" " script="SnowBall_Event.lua" />
 <!--<talkaction words="/eforest" separator=" " script="eforesttalk.lua"/>-->
 
 	<!-- Gods -->
