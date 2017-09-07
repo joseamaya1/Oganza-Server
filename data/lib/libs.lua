@@ -9,6 +9,7 @@ dofile('data/lib/modalwindow.lua')
 dofile('data/lib/lionrock.lua')
 dofile('data/lib/events/libs.lua')
 dofile('data/lib/events/eforest.lua')
+dofile('data/lib/events/eforest2.lua')
 
 -- SNOWBALL
 dofile('data/lib/events/SnowBall_Configurations.lua')
