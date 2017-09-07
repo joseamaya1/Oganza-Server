@@ -1,4 +1,4 @@
-function onSay(player, words, param, channel)
+function onSay(player, words, param)
 	if not player:getGroup():getAccess() then
 		return true
 	end
@@ -17,7 +17,7 @@ function onSay(player, words, param, channel)
 		player:sendTextMessage(MESSAGE_STATUS_CONSOLE_BLUE, "Enchanted Forest iniciado com sucesso!!")
 		doStartExf()
 	end
-	elseif param == "off" then
+	if (param == "off") then
 	if(Game.getStorageValue(configExf.stats) >=1)then
 		doCloseExf()
 		doBroadcastMessage("The Exchanted Forest event is now closed.")
