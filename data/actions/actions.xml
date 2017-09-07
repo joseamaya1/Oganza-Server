@@ -1,8 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <actions>
-      <action fromaid="2003" toaid="2011" script="other/dawnportdoors.lua" />
+	<!--Snowball war -->
+	<action actionid="7900" script="other/snowballaction.lua" />
+
+	<!--bomberman -->
+	<action actionid="2229" script="other/bomberman_minigame_action.lua"/>
+
+	<!-- Enchanted Florest -->
+	<action uniqueid="5312" script="other/flag.lua" />
 	
-<!-- World Coin's -->
+	<!-- Dawnport -->
+        <action fromaid="2003" toaid="2011" script="other/dawnportdoors.lua" />
+	
+        <!-- World Coin's -->
 	<action itemid="16101" script="other/premiumscroll.lua" />
 
 	<action itemid="24774" script="other/premiumscroll.lua" />
@@ -918,7 +928,7 @@
 	<action itemid="3955" script="other/voodoo_doll.lua" />
 	<action itemid="5468" script="other/firebug.lua" />
 	<action itemid="5928" script="other/catchFish.lua" />
-     <action itemid="25546" script="other/Shield os Destiny.lua"/>
+        <action itemid="25546" script="other/Shield os Destiny.lua"/>
 	<action itemid="25545" script="other/Shield os Destiny2.lua"/>
 	<action itemid="6578" script="other/partyhat.lua" />
 	<action itemid="2114" script="other/piggybank.lua" />
