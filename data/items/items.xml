@@ -22112,9 +22112,17 @@
 	<item id="23509" name="ground" />
 	<item fromid="11785" toid="11792" name="muddy floor" />
 	<item fromid="11793" toid="11795" article="a" name="skull pillar" />
-	<item id="11796" article="a" name="dimensional portal" />
+	<item id="11796" article="a" name="dimensional portal">
+ 	<attribute key="description" value="You can see the other side through it." />
+ 	<attribute key="type" value="teleport" />
+ 	<attribute key="effect" value="teleport" />
+ 	</item>
 	<item id="11797" article="a" name="skull pillar" />
-	<item id="11798" article="a" name="dimensional portal" />
+	<item id="11798" article="a" name="dimensional portal">
+ 	<attribute key="description" value="You can see the other side through it." />
+ 	<attribute key="type" value="teleport" />
+ 	<attribute key="effect" value="teleport" />
+ 	</item>
 	<item id="11812" article="a" name="pillar vine" />
 	<item id="11813" article="a" name="pillar growth" />
 	<item id="11817" article="a" name="tangerine tail" />
@@ -22122,7 +22130,7 @@
 	<item id="11821" article="a" name="hairy violet" />
 	<item fromid="11827" toid="11831" name="fog" />
 	<item id="11832" article="a" name="skull" plural="skulls">
-		<attribute key="weight" value="2180" />
+	<attribute key="weight" value="2180" />
 	</item>
 	<item fromid="11833" toid="11855" article="a" name="corrupted wall" />
 	<item fromid="11856" toid="11907" article="a" name="bridge" />
