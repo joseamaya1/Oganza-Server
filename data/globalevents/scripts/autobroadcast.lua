@@ -1,5 +1,3 @@
--- 
-
 function onThink(interval, lastExecution)
     local MESSAGE = {
         "[COMMANDS] !buyhouse - !sellhouse  - !aol - !bless - !autoloot add - !autoloot show - !serverinfo - !online - !uptime - !outfit .",
