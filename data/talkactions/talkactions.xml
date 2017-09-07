@@ -1,14 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <talkactions>
-<!-- Bomberman Event -->
-	<talkaction words="!bomb" script="bomberman_minigame_talkaction.lua"/>
-	
-    <!-- Snowball War Event -->
-	<talkaction words="!snowball" event="script" value="snowballtalk.lua"/>
 
-<!--<talkaction words="/eforest" separator=" " script="eforesttalk.lua"/>-->
-
-	<!-- Gods -->
+<!-- Gods -->
 		<talkaction words="/addskill" separator=" " script="add_skill.lua" />
 		<talkaction words="/r" separator=" " script="removething.lua" />
 		<talkaction words="/chameleon" separator=" " script="chameleon.lua" />
@@ -73,10 +66,17 @@
 		<talkaction words="!serverinfo" script="serverinfo.lua" />
 
 	<!-- War AntiEntrosa -->
-        <!-- War Area System -->
 	<talkaction words="/citywar" script="wardarashia.lua"/>
 	<talkaction words="/citywar" script="waredron.lua"/>
 	<talkaction words="/citywar" script="warlb.lua"/>
 	<talkaction words="/citywar" script="waryalahar.lua"/>
-		
+
+     <!-- Bomberman Event -->
+	<talkaction words="!bomb" script="bomberman_minigame_talkaction.lua"/>
+
+<!-- eforest -->   
+        <talkaction words="/eforest" separator=" " script="eforesttalk.lua"/>
+	
+     <!-- Snowball War Event -->
+	<talkaction words="!snowball" event="script" value="snowballtalk.lua"/>		
 </talkactions>
