@@ -91,7 +91,7 @@ function onLogin(player)
 
 	-- Stamina
 	nextUseStaminaTime[playerId] = 1
- 
+
 	-- EXP Stamina
 	nextUseXpStamina[playerId] = 1
 
@@ -124,7 +124,6 @@ function onLogin(player)
 			player:setStamina(stamina_full)
 			player:sendTextMessage(MESSAGE_INFO_DESCR, "Your stamina has been refilled.")
 		end
-
 		-- Promotion
 		local vocation = player:getVocation()
 		local promotion = vocation:getPromotion()
@@ -164,21 +163,24 @@ function onLogin(player)
 		stats.playerId = player:getId()
 	end
 
-	
 	-- fury gates
 	if Game.getStorageValue(GlobalStorage.FuryGates, (9710)) == 1 then -- for venore
-		player:sendTextMessage(MESSAGE_STATUS_CONSOLE_BLUE, 'Fury Gate is on Venore Today.')
+		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, 'Fury Gate is on Venore Today.')
 	elseif Game.getStorageValue(GlobalStorage.FuryGates, (9711)) == 2 then -- for ab...
-		player:sendTextMessage(MESSAGE_STATUS_CONSOLE_BLUE, 'Fury Gate is on Abdendriel Today.')
+		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, 'Fury Gate is on Abdendriel Today.')
 	elseif Game.getStorageValue(GlobalStorage.FuryGates, (9712)) == 3 then -- for ab...
-		player:sendTextMessage(MESSAGE_STATUS_CONSOLE_BLUE, 'Fury Gate is on Thais Today.')
+		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, 'Fury Gate is on Thais Today.')
 	elseif Game.getStorageValue(GlobalStorage.FuryGates, (9713)) == 4 then -- for ab...
-		player:sendTextMessage(MESSAGE_STATUS_CONSOLE_BLUE, 'Fury Gate is on Carlin Today.')
+		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, 'Fury Gate is on Carlin Today.')
 	elseif Game.getStorageValue(GlobalStorage.FuryGates, (9714)) == 5 then -- for ab...
-		player:sendTextMessage(MESSAGE_STATUS_CONSOLE_BLUE, 'Fury Gate is on Edron Today.')
+		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, 'Fury Gate is on Edron Today.')
 	elseif Game.getStorageValue(GlobalStorage.FuryGates, (9716)) == 6 then -- for ab...
-		player:sendTextMessage(MESSAGE_STATUS_CONSOLE_BLUE, 'Fury Gate is on Kazordoon Today.')
+		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, 'Fury Gate is on Kazordoon Today.')
 	end
+
+	player:sendTextMessage(messageType or MESSAGE_STATUS_CONSOLE_ORANGE, 'Welcome to OTXServer Global!')
+	player:sendTextMessage(MESSAGE_STATUS_CONSOLE_ORANGE, '[BUGS?] http://www.github.com/malucooo/otxserver-new/issues')
+	player:sendTextMessage(MESSAGE_STATUS_CONSOLE_ORANGE, '[GUILD LEADER COMMAND] Will change all outfits from members !outfit.')
 
 	-- Events
 	for i = 1, #events do
@@ -189,7 +191,6 @@ function onLogin(player)
 		player:setStorageValue(Storage.combatProtectionStorage, os.time() + 10)
 		onMovementRemoveProtection(playerId, player:getPosition(), 10)
 	end
-
 player:registerEvent("AutoLoot")
 	return true
 end
