@@ -52,11 +52,9 @@
 
 
  	<!-- player talkactions -->
-           
-        <talkaction words="!buyhouse" script="buyhouse.lua"/>
-
-   		<talkaction words="!autoloot" separator=" " script="autoloot.lua"/>
-        <talkaction words="!bless" script="bless.lua"/>
+               <talkaction words="!buyhouse" script="buyhouse.lua"/>
+               <talkaction words="!autoloot" separator=" " script="autoloot.lua"/>
+                <talkaction words="!bless" script="bless.lua"/>
 		<talkaction words="!leavehouse" script="leavehouse.lua" />
 		<talkaction words="!sellhouse" separator=" " script="sellhouse.lua" />
 		<talkaction words="!uptime" script="uptime.lua" />
@@ -78,5 +76,10 @@
         <talkaction words="/eforest" separator=" " script="eforesttalk.lua"/>
 	
     <!-- Snowball War Event -->
-	    <talkaction words="!snowball" event="script" value="snowballtalk.lua"/>		
+	    <talkaction words="!snowball" event="script" value="snowballtalk.lua"/>
+	
+	<!-- Cast System -->
+		<talkaction words="!cast" separator=" " script="start_cast.lua" />
+		<talkaction words="!stopcast" script="stop_cast.lua" />
+		<talkaction words="!spectators" script="spectators.lua" />
 </talkactions>
