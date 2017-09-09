@@ -6,13 +6,13 @@ if not warzoneConfig then
             rangeX = 27, rangeY = 25,
  
             boss = "Gnomevil",   -- nome do boss 
-            teleportTo = Position(33106, 31955, 11),   -- Local onde o player será teleportado dentro da room
+            teleportTo = Position(33106, 31955, 11),   -- Local onde o player serÃ¡ teleportado dentro da room
             locked = false,
  
             storage = 790014,    -- storage 
             interval = 10 * 60 * 60,
  
-            exit = Position(33001, 31900, 9)   -- Exit padrão
+            exit = Position(33001, 31900, 9)   -- Exit padrÃ£o
         },
 		
 		
@@ -22,13 +22,13 @@ if not warzoneConfig then
             rangeX = 26, rangeY = 25,
  
             boss = "Deathstrike",   -- nome do boss 
-            teleportTo = Position(33096, 31955, 10),   -- Local onde o player será teleportado dentro da room
+            teleportTo = Position(33096, 31955, 10),   -- Local onde o player serÃ¡ teleportado dentro da room
             locked = false,
  
             storage = 790015,    -- storage 
             interval = 10 * 60 * 60,
  
-            exit = Position(33001, 31900, 9)   -- Exit padrão
+            exit = Position(33001, 31900, 9)   -- Exit padrÃ£o
         },
 		
 		-- Warzone 
@@ -37,13 +37,13 @@ if not warzoneConfig then
             rangeX = 20, rangeY = 20,
  
             boss = "Abyssador",   -- nome do boss 
-            teleportTo = Position(33083, 31904, 12),  -- Local onde o player será teleportado dentro da room
+            teleportTo = Position(33083, 31904, 12),  -- Local onde o player serÃ¡ teleportado dentro da room
             locked = false,
  
             storage = 790016,    -- storage 
             interval = 10 * 60 * 60,
  
-            exit = Position(33001, 31900, 9)   -- Exit padrão
+            exit = Position(33001, 31900, 9)   -- Exit padrÃ£o
         }
 		
 		
@@ -84,13 +84,13 @@ function onStepIn(creature, item, pos, fromPosition)
     end
  
     if  creature:getStorageValue(info.storage) > os.time() then
-        creature:sendTextMessage(MESSAGE_STATUS_CONSOLE_BLUE, "You have already cleared this warzone in the last ten hours.")
+        creature:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You have already cleared this warzone in the last ten hours.")
         creature:teleportTo(fromPosition)
         return false
     end
  
     if info.locked then
-        creature:sendTextMessage(MESSAGE_STATUS_CONSOLE_BLUE, "Please, wait a minute until the room is cleared.")
+        creature:sendTextMessage(MESSAGE_EVENT_ADVANCE, "Please, wait a minute until the room is cleared.")
         creature:teleportTo(fromPosition)
         return false
     end
