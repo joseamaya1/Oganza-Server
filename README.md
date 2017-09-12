@@ -1,4 +1,4 @@
-# Oganza Server 11.46 Global - mapas extras - ilha 999 com área de hunt custom
+# Oganza Server 11.47 Global - mapas extras - ilha 999 com área de hunt custom
 
 Servidor sendo atualizado diariamente
 (não esqueça de extrair o mapa)
@@ -46,9 +46,9 @@ Iddle time de 60 minutos
 
 [RME](http://www.mediafire.com/file/dsebb45v585ap8a/Remere%27s+Map+Editor.rar)
 
-## Cliente 11.46
+## Cliente 11.47
 
-[Cliente](http://www.mediafire.com/file/4j3tsd7i3tgus44/Tibia+11.46.rar) com ip 127.0.0.1
+[Cliente](http://www.mediafire.com/file/289g1je44rivor6/Tibia+11.47.rar) com ip 127.0.0.1
 
 ## Htdocs GESIOR compatível
 
