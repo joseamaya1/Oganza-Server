@@ -27,8 +27,8 @@ static constexpr auto STATUS_SERVER_DEVELOPERS = "Jaurez Oliveira";
 static constexpr auto GIT_REPO = "https://github.com/jaurez/Oganza-Server/";
 
 static constexpr auto CLIENT_VERSION_MIN = 1100;
-static constexpr auto CLIENT_VERSION_MAX = 1146;
-static constexpr auto CLIENT_VERSION_STR = "10.00 or 11.46";
+static constexpr auto CLIENT_VERSION_MAX = 1147;
+static constexpr auto CLIENT_VERSION_STR = "10.00 or 11.47";
 
 static constexpr auto AUTHENTICATOR_DIGITS = 6U;
 static constexpr auto AUTHENTICATOR_PERIOD = 30U;
