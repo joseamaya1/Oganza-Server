@@ -35,8 +35,28 @@
 		<attribute key="shootType" value="crystallinearrow" />	
 		<attribute key="maxHitChance" value="100" />		
 	</item>
-
-	<!-- Imbuiment-->
+	<item id="29055" article="an" name="Wand of Darkness">
+ 		<attribute key="description" value="Temporary magic powers enchant this staff." />
+ 		<attribute key="weight" value="3800" />
+ 		<attribute key="weaponType" value="wand" />
+ 		<attribute key="range" value="4" />
+ 		<attribute key="charges" value="250" />
+ 		<attribute key="showcharges" value="1" />		
+ 		<attribute key="skillcriticalchance" value="10" />
+ 		<attribute key="skillcriticaldamage" value="50" />		
+ 		<attribute key="decayTo" value="2401" />
+ 		<attribute key="magiclevelpoints" value="2" />		
+ 		<attribute key="duration" value="900" />
+ 	</item>
+ 	<item id="29000" article="a" name="dream blossom staff">
+ 		<attribute key="description" value="It's a gnarly branch with a gleaming blue blossom." />
+ 		<attribute key="weight" value="3200" />
+ 		<attribute key="weaponType" value="wand" />
+ 		<attribute key="shootType" value="death" />
+ 		<attribute key="range" value="4" />
+ 		<attribute key="magiclevelpoints" value="2" />
+ 	</item>
+    <!-- Imbuiment-->
 	<!-- Helmets-->
 	<item id="2499" article="an" name="amazon helmet">
 		<attribute key="weight" value="2950" />
@@ -2919,7 +2939,7 @@
 	<item id="1880" article="a" name="white tapestry">
 		<attribute key="weight" value="1000" />
 	</item>
-	<item id="25393" article="a" name="rift carpet">
+	<item id="25393" article="a" name="folded rift carpet">
 		<attribute key="weight" value="1000" />
 	</item>
 	<item id="25391" article="a" name="rift lamp">
@@ -37532,4 +37552,7 @@
 		<attribute key="description" value="This keg can be used to refill ultimate spirit potions." />
 		<attribute key="weight" value="12500" />
 	</item>
+	<item fromid="29084" toid="29085" name="reward shrine">
+ 	<attribute key="description" value="It depicts the two suns of Tibia, symbolising the course of a day." />
+ 	</item>
 </items>
