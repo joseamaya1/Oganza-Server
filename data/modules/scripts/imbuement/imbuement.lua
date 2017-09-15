@@ -19,7 +19,7 @@ local Imbuements = {
 		Levels = {"Basic", "Intricate", "Powerful"},
 		LevelsPercent = {10, 25, 50},
 		Weapons = {"axe", "club", "sword"},
-		Items = {{10553, 25}, {5920, 5}, {5954, 5}}
+		Items = {{10553, 0}, {5920, 0}, {5954, 0}}
 	},
 	{
 		Name = "Venom",
@@ -29,7 +29,7 @@ local Imbuements = {
 		Levels = {"Basic", "Intricate", "Powerful"},
 		LevelsPercent = {10, 25, 50},
 		Weapons = {"axe", "club", "sword"},
-		Items = {{10603, 25}, {10557, 5}, {23565, 5}}
+		Items = {{10603, 0}, {10557, 0}, {23565, 0}}
 	},
 	{
 		Name = "Frost",
@@ -39,7 +39,7 @@ local Imbuements = {
 		Levels = {"Basic", "Intricate", "Powerful"},
 		LevelsPercent = {10, 25, 50},
 		Weapons = {"axe", "club", "sword"},
-		Items = {{10567, 25}, {10578, 20}, {24170, 1}}
+		Items = {{10567, 0}, {10578, 0}, {24170, 0}}
 	},
 	{
 		Name = "Electrify",
@@ -49,7 +49,7 @@ local Imbuements = {
 		Levels = {"Basic", "Intricate", "Powerful"},
 		LevelsPercent = {10, 25, 50},
 		Weapons = {"axe", "club", "sword"},
-		Items = {{21310, 25}, {24631, 5}, {26164, 1}}
+		Items = {{21310, 0}, {24631, 0}, {26164, 0}}
 	},
 	{
 		Name = "Reap",
@@ -59,7 +59,7 @@ local Imbuements = {
 		Levels = {"Basic", "Intricate", "Powerful"},
 		LevelsPercent = {10, 25, 50},
 		Weapons = {"axe", "club", "sword"},
-		Items = {{12440, 25}, {10564, 20}, {11337, 5}}
+		Items = {{12440, 0}, {10564, 0}, {11337, 0}}
 	},
 	{
 		Name = "Vampirism",
@@ -69,7 +69,7 @@ local Imbuements = {
 		Levels = {"Basic", "Intricate", "Powerful"},
 		LevelsPercent = {5, 10, 25},
 		Weapons = {"axe", "club", "sword", "wand", "rod", "bow", "armor"},
-		Items = {{10602, 25}, {10550, 15}, {10580, 5}}
+		Items = {{10602, 0}, {10550, 0}, {10580, 0}}
 	},
 	{
 		Name = "Void",
@@ -79,7 +79,7 @@ local Imbuements = {
 		Levels = {"Basic", "Intricate", "Powerful"},
 		LevelsPercent = {3, 5, 8},
 		Weapons = {"axe", "club", "sword", "wand", "rod", "bow", "helmet"},
-		Items = {{12448, 25}, {22534, 25}, {25386, 5}}
+		Items = {{12448, 0}, {22534, 0}, {25386, 0}}
 	},
 	{
 		Name = "Strike",
@@ -89,7 +89,7 @@ local Imbuements = {
 		Levels = {"Basic", "Intricate", "Powerful"},
 		LevelsPercent = {15, 25, 50},
 		Weapons = {"axe", "club", "sword", "bow"},
-		Items = {{12400, 20}, {11228, 25}, {25384, 5}}
+		Items = {{12400, 0}, {11228, 0}, {25384, 0}}
 	},
 	{
 		Name = "Lich Shroud",
@@ -99,7 +99,7 @@ local Imbuements = {
 		Levels = {"Basic", "Intricate", "Powerful"},
 		LevelsPercent = {3, 8, 15},
 		Weapons = {"armor", "shield"},
-		Items = {{12422, 25}, {24663, 20}, {10577, 5}}
+		Items = {{12422, 0}, {24663, 0}, {10577, 0}}
 	},
 	{
 		Name = "Snake Skin",
@@ -109,7 +109,7 @@ local Imbuements = {
 		Levels = {"Basic", "Intricate", "Powerful"},
 		LevelsPercent = {3, 8, 15},
 		Weapons = {"armor", "shield"},
-		Items = {{20103, 25}, {10611, 20}, {12658, 10}}
+		Items = {{20103, 0}, {10611, 0}, {12658, 0}}
 	},
 	{
 		Name = "Hide Dragon",
@@ -119,7 +119,7 @@ local Imbuements = {
 		Levels = {"Basic", "Intricate", "Powerful"},
 		LevelsPercent = {3, 8, 15},
 		Weapons = {"armor", "shield"},
-		Items = {{5877, 25}, {18425, 10}, {12614, 5}}
+		Items = {{5877, 0}, {18425, 0}, {12614, 0}}
 	},
 	{
 		Name = "Quara Scale",
@@ -129,7 +129,7 @@ local Imbuements = {
 		Levels = {"Basic", "Intricate", "Powerful"},
 		LevelsPercent = {3, 8, 15},
 		Weapons = {"armor", "shield"},
-		Items = {{11212, 25}, {11224, 15}, {15425, 10}}
+		Items = {{11212, 0}, {11224, 0}, {15425, 0}}
 	},
 	{
 		Name = "Cloud Fabric",
@@ -139,7 +139,7 @@ local Imbuements = {
 		Levels = {"Basic", "Intricate", "Powerful"},
 		LevelsPercent = {3, 8, 15},
 		Weapons = {"armor", "shield"},
-		Items = {{10561, 25}, {15482, 15}, {10582, 10}}
+		Items = {{10561, 0}, {15482, 0}, {10582, 0}}
 	},
 	{
 		Name = "Demon Presence",
@@ -149,7 +149,7 @@ local Imbuements = {
 		Levels = {"Basic", "Intricate", "Powerful"},
 		LevelsPercent = {3, 8, 15},
 		Weapons = {"armor", "shield"},
-		Items = {{10556, 25}, {10555, 25}, {11221, 20}}
+		Items = {{10556, 0}, {10555, 0}, {11221, 0}}
 	},
 	{
 		Name = "Swiftness",
@@ -159,7 +159,7 @@ local Imbuements = {
 		Levels = {"Basic", "Intricate", "Powerful"},
 		LevelsPercent = {10, 15, 20},
 		Weapons = {"boots"},
-		Items = {{19738, 15}, {11219, 25}, {15484, 20}}
+		Items = {{19738, 0}, {11219, 0}, {15484, 0}}
 	},
 	{
 		Name = "Chop",
@@ -169,7 +169,7 @@ local Imbuements = {
 		Levels = {"Basic", "Intricate", "Powerful"},
 		LevelsPercent = {1, 2, 4},
 		Weapons = {"axe", "helmet"},
-		Items = {{11113, 20}, {12403, 25}, {23571, 20}}
+		Items = {{11113, 0}, {12403, 0}, {23571, 0}}
 	},
 	{
 		Name = "Slash",
@@ -179,7 +179,7 @@ local Imbuements = {
 		Levels = {"Basic", "Intricate", "Powerful"},
 		LevelsPercent = {1, 2, 4},
 		Weapons = {"sword", "helmet"},
-		Items = {{10608, 25}, {23573, 25}, {10571, 5}}
+		Items = {{10608, 0}, {23573, 0}, {10571, 0}}
 	},
 	{
 		Name = "Bash",
@@ -189,7 +189,7 @@ local Imbuements = {
 		Levels = {"Basic", "Intricate", "Powerful"},
 		LevelsPercent = {1, 2, 4},
 		Weapons = {"club", "helmet"},
-		Items = {{10574, 20}, {24845, 15}, {11322, 10}}
+		Items = {{10574, 0}, {24845, 0}, {11322, 0}}
 	},
 	{
 		Name = "Precision",
@@ -199,7 +199,7 @@ local Imbuements = {
 		Levels = {"Basic", "Intricate", "Powerful"},
 		LevelsPercent = {1, 2, 4},
 		Weapons = {"bow", "helmet"},
-		Items = {{12420, 25}, {21311, 20}, {11215, 10}}
+		Items = {{12420, 0}, {21311, 0}, {11215, 0}}
 	},
 	{
 		Name = "Blockade",
@@ -209,7 +209,7 @@ local Imbuements = {
 		Levels = {"Basic", "Intricate", "Powerful"},
 		LevelsPercent = {1, 2, 4},
 		Weapons = {"shield", "helmet"},
-		Items = {{10558, 20}, {12659, 25}, {22533, 25}}
+		Items = {{10558, 0}, {12659, 0}, {22533, 0}}
 	},
 	{
 		Name = "Epiphany",
@@ -219,15 +219,15 @@ local Imbuements = {
 		Levels = {"Basic", "Intricate", "Powerful"},
 		LevelsPercent = {1, 2, 4},
 		Weapons = {"wand", "rod", "helmetmage"},
-		Items = {{10552, 25}, {12408, 15}, {11226, 15}}
+		Items = {{10552, 0}, {12408, 0}, {11226, 0}}
 	}
 }
 
 local Weapons = {
 	["armor"] = {21692, 2500, 2656, 2464, 2487, 2494, 15407, 2492, 2503, 12607, 2466, 23538, 10296, 2476, 3968, 2472, 7463, 8888, 23537, 2486, 15406, 8891, 18404, 10363},
-	["shield"] = {2537, 2518, 15491, 2534, 2535, 2536, 2542, 2539, 2519, 2520, 25382, 25414, 15411, 2516, 2514, 2522, 2533, 2531, 21707, 10289, 6433, 6391, 7460, 2524, 15413, 21697, 3974, 12644, 10297, 10294, 2509, 10364, 15453, 25411, 2217, 8900, 8901},
+	["shield"] = {2537, 2518, 15491, 2534, 2535, 2536, 2542, 2539, 2519, 2520, 25382, 25414, 15411, 2516, 2514, 2522, 2533, 2531, 21707, 10289, 6433, 6391, 7460, 2524, 15413, 21697, 3974, 12644, 10297, 10294, 2509, 10364, 15453, 25411, 2217, 8900, 8901, 25546},
 	["boots"] = {9931, 3982, 15410, 2646, 24637, 5462, 18406, 2645, 25412, 21708},
-	["helmet"] = {2499, 2139, 3972, 2491, 2497, 2493, 2502, 12645, 7458, 2471, 10298, 10299, 20132, 2662, 10291, 2498, 24848, 5741, 25410, 2475, 11302},
+	["helmet"] = {2499, 2139, 3972, 2491, 2497, 2493, 2502, 12645, 7458, 2471, 10298, 10299, 20132, 2662, 10291, 2498, 24848, 5741, 25410, 2475, 11302, 24810},
 	["helmetmage"] = {10016, 2323, 12630, 11368, 8820, 10570, 9778},
 	["bow"] = {7438, 15643, 21696, 10295, 18454, 25522, 8857, 8854, 8850, 8851, 8852, 8853, 2455, 8849, 16111, 21690},
 	["wand"] = {8920, 8921, 8922, 2191},
@@ -238,9 +238,9 @@ local Weapons = {
 }
 
 local ImbuingInfo = {
-	[1] = {Price = 5000, Protection = 10000, Percent = 90},
-	[2] = {Price = 25000, Protection = 30000, Percent = 70},
-	[3] = {Price = 100000, Protection = 50000, Percent = 50}
+	[1] = {Price = 500, Protection = 500, Percent = 90},
+	[2] = {Price = 1000, Protection = 1000, Percent = 70},
+	[3] = {Price = 1500, Protection = 1500, Percent = 50}
 }
 
 local imbuingShrineIds = {
@@ -478,8 +478,8 @@ function Player.clearImbuement(self, msg)
 		return false
 	end
 
-	if (not self:removeMoneyNpc(15000)) then
-		sendImbuementError(self, "You don't have enough money 15000 gps.", ErrorMessages.MESSAGEDIALOG_CLEARING_CHARM_ERROR)
+	if (not self:removeMoneyNpc(1000)) then
+		sendImbuementError(self, "You don't have enough money 1000 gps.", ErrorMessages.MESSAGEDIALOG_CLEARING_CHARM_ERROR)
 		return false
 	end
 
@@ -542,7 +542,7 @@ function Player.openImbuementWindow(self, item)
 			msg:addByte(ImbuingInfo[enchantLevel].Percent)
 			msg:addU32(ImbuingInfo[enchantLevel].Protection) -- End Read Imbuement Data
 			msg:addU32(item:getTimeImbuement(i+3)) -- Remaining Seconds
-			msg:addU32(15000) -- Clear Cost Gold
+			msg:addU32(1000) -- Clear Cost Gold
 		else
 			msg:addByte(0x00)
 		end
