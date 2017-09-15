@@ -14910,7 +14910,13 @@
 	</item>
 	<item id="7536" name="the remains of a spider egg" />
 	<item id="7537" article="a" name="spider egg" />
-	<item fromid="7538" toid="7543" article="a" name="spider web" />
+	<item id="7538" article="a" name="spider web">
+ 		<attribute key="destroyTo" value="7544" />
+ 	</item>
+ 	<item id="7539" article="a" name="spider web">
+ 		<attribute key="destroyTo" value="7545" />
+ 	</item>
+ 	<item fromid="7540" toid="7543" article="a" name="spider web" />
 	<item id="7544" name="the remains of a spider web">
 		<attribute key="decayTo" value="7538" />
 		<attribute key="duration" value="60" />
@@ -22133,6 +22139,9 @@
 	<item fromid="11785" toid="11792" name="muddy floor" />
 	<item fromid="11793" toid="11795" article="a" name="skull pillar" />
 	<item id="11796" article="a" name="dimensional portal">
+ 		<attribute key="description" value="You can see the other side through it." />
+ 		<attribute key="type" value="teleport" />
+ 		<attribute key="effect" value="teleport" />
  	<attribute key="description" value="You can see the other side through it." />
  	<attribute key="type" value="teleport" />
  	<attribute key="effect" value="teleport" />
