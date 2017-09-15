@@ -805,7 +805,7 @@ DepotChest* Player::getDepotChest(uint32_t depotId, bool autoCreate)
 	}
 
 	depotChest->incrementReferenceCounter();
-	depotChest->setMaxDepotItems(getMaxDepotItems());
+	//depotChest->setMaxDepotItems(getMaxDepotItems());
 	depotChests[depotId] = depotChest;
 	return depotChest;
 }
@@ -4711,9 +4711,9 @@ size_t Player::getMaxDepotItems() const
 	if (group->maxDepotItems != 0) {
 		return group->maxDepotItems;
 	} else if (isPremium()) {
-		return g_config.getNumber(ConfigManager::PREMIUM_DEPOT_LIMIT);
+		return 3000;
 	}
-	return g_config.getNumber(ConfigManager::FREE_DEPOT_LIMIT);
+	return 2000;
 }
 
 std::forward_list<Condition*> Player::getMuteConditions() const
